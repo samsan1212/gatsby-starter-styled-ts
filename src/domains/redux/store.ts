@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import rootEpic from "@/redux/epics"
-import rootReducer from "@/redux/reducers"
+import rootEpic from "@/domains/redux/epics"
+import rootReducer from "@/domains/redux/reducers"
 import { applyMiddleware, compose, createStore } from "redux"
 import { createEpicMiddleware } from "redux-observable"
 import { composeWithDevTools } from "redux-devtools-extension"
@@ -9,12 +9,8 @@ import type { AppAction } from "redux-functions"
 
 const getStore = () => {
   // epic setup
-  const epicMiddleware = createEpicMiddleware<
-    AppAction<any>,
-    any,
-    ReduxStore,
-    any
-  >()
+  const epicMiddleware =
+    createEpicMiddleware<AppAction<any>, any, ReduxStore, any>()
   const composeEnhancers =
     process.env.NODE_ENV === "production"
       ? compose

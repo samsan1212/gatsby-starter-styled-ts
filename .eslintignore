@@ -1,4 +1,5 @@
 __mocks__/gatsby.js
+.commitlintrc.js
 .eslintrc.js
 gatsby-config.js
 gatsby-node.js
