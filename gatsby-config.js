@@ -15,7 +15,6 @@ module.exports = {
     },
     `gatsby-plugin-postcss`,
     `gatsby-plugin-eslint`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -48,4 +47,4 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
   ],
-}
+};

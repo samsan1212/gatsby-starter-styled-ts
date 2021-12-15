@@ -1,9 +1,15 @@
 __mocks__/gatsby.js
+
 .commitlintrc.js
 .eslintrc.js
+
 gatsby-config.js
 gatsby-node.js
+gatsby-browser.js
+gatsby-ssr.js
+
 jest-preprocess.js
 jest.config.js
+
 loadershim.js
 postcss.config.js

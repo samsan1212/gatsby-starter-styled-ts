@@ -1,2 +1,2 @@
-import WrappedRootElement from "./gatsby-provider-wrapper.js"
-export const wrapRootElement = WrappedRootElement
+import WrappedRootElement from "./gatsby-provider-wrapper";
+export const wrapRootElement = WrappedRootElement;

@@ -46,7 +46,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
-    ├── gatsby-provider-wrapper.js
+    ├── gatsby-provider-wrapper.tsx
     ├── gatsby-ssr.js
     ├── LICENSE
     ├── package.json
@@ -69,7 +69,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 7. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-8. **`gatsby-provider-wrapper.js`**: This file is where all the 3rd party libraries initiate their wrappers, e.g. `redux`. These allow the setup of 3rd libraries when the webapp are loaded.
+8. **`gatsby-provider-wrapper.tsx`**: This file is where all the 3rd party libraries initiate their wrappers, e.g. `redux`. These allow the setup of 3rd libraries when the webapp are loaded.
 
 9. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 

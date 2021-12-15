@@ -5,28 +5,40 @@
  */
 
 // You can delete this file if you're not using it
-const { ProvidePlugin } = require("webpack")
-const esbuild = require("esbuild")
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     module: {
       rules: [
         {
-          test: /\.(j|t)sx?$/,
-          loader: "esbuild-loader",
-          options: {
-            loader: "tsx",
-            tsconfigRaw: require("./tsconfig.json"),
-            implementation: esbuild,
+          test: /\.tsx?$/,
+          exclude: /(node_modules|bower_components)/,
+          use: {
+            loader: "swc-loader",
+            options: {
+              sourceMaps: true,
+              parseMap: true,
+              jsc: {
+                parser: {
+                  tsx: true,
+                  syntax: "typescript",
+                  decorators: true,
+                  topLevelAwait: true,
+                  importMeta: true,
+                },
+                transform: {
+                  legacyDecorator: true,
+                  decoratorMetadata: true,
+                  react: {
+                    runtime: "automatic",
+                  },
+                },
+                target: "es2017",
+              },
+            },
           },
         },
       ],
     },
-    plugins: [
-      new ProvidePlugin({
-        React: "react",
-      }),
-    ],
-  })
-}
+  });
+};
