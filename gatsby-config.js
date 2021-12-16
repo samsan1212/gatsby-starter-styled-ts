@@ -27,22 +27,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `GatsbyJS`, // @FIXME: change name
+        short_name: `GatsbyJS`, // @FIXME: change name
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          "@": "src",
-        },
+        icon: `src/assets/gatsby-icon.png`, // @FIXME: change image. This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

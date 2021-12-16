@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -16,21 +16,21 @@ const Image = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(
-        relativePath: { eq: "images/gatsby-astronaut.png" }
+        relativePath: { eq: "assets/gatsby-astronaut.png" }
       ) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 300)
         }
       }
     }
-  `)
+  `);
 
   return (
     <GatsbyImage
       image={data.placeholderImage.childImageSharp.gatsbyImageData}
       alt="gatsby-astronaut"
     />
-  )
-}
+  );
+};
 
-export default Image
+export default Image;

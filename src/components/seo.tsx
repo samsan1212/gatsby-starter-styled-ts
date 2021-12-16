@@ -11,6 +11,7 @@ import Helmet from "react-helmet";
 interface Props {
   description?: string;
   lang?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   meta?: any[];
   title: string;
 }

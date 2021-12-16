@@ -1,6 +1,6 @@
 /* eslint-disable  */
-import "./src/utils/styles/reset.css";
-import "./src/utils/styles/global.css";
+import "./src/reset.css";
+import "./src/global.css";
 
 export default ({ element }) => {
   return <>{element}</>;

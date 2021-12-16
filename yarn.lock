@@ -1439,7 +1439,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.2.0, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.6, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.3.4, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.9.2":
   version: 7.16.5
   resolution: "@babel/runtime@npm:7.16.5"
   dependencies:
@@ -3439,6 +3439,13 @@ __metadata:
   dependencies:
     "@types/node": "*"
   checksum: 21e6681ee18cee6314dbe0f57ada48981912b76de8266f438ba2573770d60aaa8dd376baad3f20e2346696a7cca84b0aadd1737222341553a0091831a46e6ad1
+  languageName: node
+  linkType: hard
+
+"@types/module-alias@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@types/module-alias@npm:2.0.1"
+  checksum: c6d6d30605833b03465c39760df42616fd24e4f532a29bb77954220885feb21eb2d84dd38eed68b0c18997e6930fdc5914d2dc6fd7cc5d110a42068d2204e11e
   languageName: node
   linkType: hard
 
@@ -8527,17 +8534,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-alias-imports@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "gatsby-plugin-alias-imports@npm:1.0.5"
-  dependencies:
-    "@babel/runtime": ^7.2.0
-  peerDependencies:
-    gatsby: ">2.0.0"
-  checksum: acf5c1b3fb9502d8f931fceb5502827480ede2a04b97950282b9c4eea1c3a0e72e251fb38a39ed92a7ea7f3e8ac9043e51bad2a9c5508d202cb66ceb1975eb42
-  languageName: node
-  linkType: hard
-
 "gatsby-plugin-eslint@npm:^4.0.2":
   version: 4.0.2
   resolution: "gatsby-plugin-eslint@npm:4.0.2"
@@ -8882,6 +8878,7 @@ __metadata:
     "@swc/core": ^1.2.120
     "@testing-library/react": ^12.0.0
     "@types/jest": ^27.0.1
+    "@types/module-alias": ^2.0.1
     "@types/node": ^16.6.1
     "@types/react": ^17.0.17
     "@types/react-dom": ^17.0.9
@@ -8903,7 +8900,6 @@ __metadata:
     eslint-webpack-plugin: 2.5.4
     gatsby: ^4.4.0
     gatsby-image: ^3.11.0
-    gatsby-plugin-alias-imports: ^1.0.5
     gatsby-plugin-eslint: ^4.0.2
     gatsby-plugin-image: ^2.4.0
     gatsby-plugin-manifest: ^4.4.0
@@ -8918,6 +8914,7 @@ __metadata:
     identity-obj-proxy: ^3.0.0
     jest: ^27.4.5
     jest-environment-jsdom-sixteen: ^2.0.0
+    module-alias: ^2.2.2
     postcss-preset-env: ^6.7.0
     prettier: ^2.5.1
     react: ^17.0.2
@@ -12737,6 +12734,13 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
+  languageName: node
+  linkType: hard
+
+"module-alias@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "module-alias@npm:2.2.2"
+  checksum: 4b5543f834b484033e5bd184096ca8276b9195e32e88883ee6ea8d3a4789d97c470d26f5fa7271bd7a26588bf67e4d27dbdb594ee327aef1c9619d855dc78342
   languageName: node
   linkType: hard
 

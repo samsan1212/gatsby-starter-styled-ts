@@ -15,9 +15,12 @@
     "noEmit": true,
     "sourceMap": true,
     "jsx": "react-jsx",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "~services/*": ["./src/services/*"],
+      "~components/*": ["./src/components/*"],
+      "~assets/*": ["./src/assets/*"],
+      "~utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src", "gatsby-provider-wrapper.tsx"],
