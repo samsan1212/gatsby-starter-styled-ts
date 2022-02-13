@@ -26,6 +26,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-less`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
