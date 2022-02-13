@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 
-import styles from "./Header.module.css";
+import * as styles from "./Header.module.css";
 
 import type { PropsWithoutRef } from "react";
 

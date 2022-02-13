@@ -13,14 +13,20 @@ module.exports = {
         path: `${__dirname}/src`,
       },
     },
-    `gatsby-plugin-postcss`,
-    `gatsby-plugin-eslint`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+      },
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
         implementation: require("sass"),
       },
     },
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,

@@ -27,7 +27,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "rxjs": "^7.3.0"
+    "rxjs": "^7.3.0",
+    "styled-components": "^5.3.3"
   },
   "browserslist": [
     ">0.2%",
@@ -50,6 +51,8 @@
     "@types/react-test-renderer": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
+    "babel-plugin-styled-components": "^2.0.2",
+    "css-loader": "^6.6.0",
     "eslint": "^8.6.0",
     "eslint-config-react-app": "^7.0.0",
     "eslint-plugin-flowtype": "^8.0.3",
@@ -69,14 +72,16 @@
     "gatsby-plugin-react-helmet": "^5.4.0",
     "gatsby-plugin-sass": "^5.4.0",
     "gatsby-plugin-sharp": "^4.4.0",
+    "gatsby-plugin-styled-components": "^5.7.0",
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.5",
     "jest-environment-jsdom-sixteen": "^2.0.0",
-    "postcss-preset-env": "^6.7.0",
+    "postcss": "^8.4.6",
+    "postcss-preset-env": "^7.3.2",
     "prettier": "^2.5.1",
-    "sass": "^1.37.5",
-    "sass-loader": "^12.1.0",
+    "sass": "^1.49.7",
+    "sass-loader": "^12.4.0",
     "swc-loader": "^0.1.15",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0"
