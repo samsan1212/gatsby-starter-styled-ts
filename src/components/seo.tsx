@@ -21,7 +21,7 @@ const SEO: React.FC<Props> = ({
   lang = "en",
   meta = [],
   title,
-}) => {
+}: Props) => {
   const { site } = useStaticQuery(
     graphql`
       query {

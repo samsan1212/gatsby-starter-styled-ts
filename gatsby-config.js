@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Typescript Suite Starter`,
-    description: `A Gatsby starter for typescript and styled-components`,
+    description: `A Gatsby starter for typescript`,
     author: `Sam TS Chan`,
   },
   plugins: [
@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src`,
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
       },
     },
     {
@@ -25,7 +25,6 @@ module.exports = {
         implementation: require("sass"),
       },
     },
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-less`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-image`,

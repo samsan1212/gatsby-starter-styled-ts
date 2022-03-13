@@ -12,31 +12,10 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     module: {
       rules: [
         {
-          test: /\.tsx?$/,
+          test: /\.m(j|t)sx?$/,
           exclude: /(node_modules|bower_components)/,
           use: {
             loader: "swc-loader",
-            options: {
-              sourceMaps: true,
-              parseMap: true,
-              jsc: {
-                parser: {
-                  tsx: true,
-                  syntax: "typescript",
-                  decorators: true,
-                  topLevelAwait: true,
-                  importMeta: true,
-                },
-                transform: {
-                  legacyDecorator: true,
-                  decoratorMetadata: true,
-                  react: {
-                    runtime: "automatic",
-                  },
-                },
-                target: "es2017",
-              },
-            },
           },
         },
       ],

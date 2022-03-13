@@ -15,9 +15,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(
-        relativePath: { eq: "assets/gatsby-astronaut.png" }
-      ) {
+      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 300)
         }

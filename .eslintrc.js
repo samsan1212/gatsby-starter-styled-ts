@@ -5,22 +5,45 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "react-app",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "prettier",
   ],
-  parserOptions: {
-    project: "tsconfig.json",
-    sourceType: "module",
+  env: {
+    node: true,
+    browser: true,
+    jest: true,
   },
   settings: {
-    react: {
-      version: "detect",
+    "import/extensions": [".js", ".jsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
+    "import/resolver": {
+      typescript: {
+        project: __dirname + "/tsconfig.json",
+      },
     },
   },
+  ignorePatterns: [
+    "__mocks__/gatsby.js",
+    "gatsby*.js",
+    "gatsby*.ts",
+    "jest*.js",
+    "loadershim.js",
+    "postcss.config.js",
+    "public",
+    ".commitlintrc.js",
+    ".eslintrc.js",
+  ],
   rules: {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-use-before-define": ["warn", "nofunc"],
+    "@typescript-eslint/no-explicit-any": "off",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -35,5 +58,28 @@ module.exports = {
     "@typescript-eslint/no-duplicate-imports": ["error"],
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
+    "import/order": [
+      "error",
+      {
+        groups: [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type",
+        ],
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: false,
+        },
+        "newlines-between": "always",
+        warnOnUnassignedImports: true,
+      },
+    ],
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
   },
 };
