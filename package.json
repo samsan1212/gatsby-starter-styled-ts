@@ -12,9 +12,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "serve": "gatsby serve",
     "start": "yarn develop",
-    "test": "echo \"No test, skipped for now\"",
-    "type-check:watch": "tsc --noEmit --watch",
-    "type-check": "tsc --noEmit",
+    "test": "jest",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -41,7 +39,9 @@
     "@babel/preset-typescript": "^7.16.7",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@swc/core": "^1.2.154",
+    "@swc/core": "^1.2.156",
+    "@swc/jest": "^0.2.20",
+    "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@types/jest": "^27.0.1",
     "@types/module-alias": "^2.0.1",

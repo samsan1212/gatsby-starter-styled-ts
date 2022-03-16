@@ -1,6 +1,5 @@
 {
   "sourceMaps": true,
-  "parseMap": true,
   "jsc": {
     "parser": {
       "tsx": true,
