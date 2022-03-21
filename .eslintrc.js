@@ -71,6 +71,32 @@ module.exports = {
           "object",
           "type",
         ],
+        pathGroups: [
+          {
+            pattern: "*.css",
+            patternOptions: { matchBase: true },
+            group: "type",
+            position: "before",
+          },
+          {
+            pattern: "*.scss",
+            patternOptions: { matchBase: true },
+            group: "type",
+            position: "before",
+          },
+          {
+            pattern: "*.sass",
+            patternOptions: { matchBase: true },
+            group: "type",
+            position: "before",
+          },
+          {
+            pattern: "*.less",
+            patternOptions: { matchBase: true },
+            group: "type",
+            position: "before",
+          },
+        ],
         alphabetize: {
           order: "asc",
           caseInsensitive: false,
