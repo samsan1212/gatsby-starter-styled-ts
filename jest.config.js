@@ -1,9 +1,30 @@
 const fs = require("fs");
-const swcConfig = JSON.parse(fs.readFileSync("./.swcrc", { encoding: "utf8" }));
 
 module.exports = {
   transform: {
-    "^.+\\.[jt]sx?$": ["@swc/jest", swcConfig],
+    "^.+\\.[jt]sx?$": [
+      "@swc/jest",
+      {
+        sourceMaps: true,
+        jsc: {
+          parser: {
+            tsx: true,
+            syntax: "typescript",
+            decorators: true,
+            topLevelAwait: true,
+            importMeta: true,
+          },
+          transform: {
+            legacyDecorator: true,
+            decoratorMetadata: true,
+            react: {
+              runtime: "automatic",
+            },
+          },
+          target: "es2017",
+        },
+      },
+    ],
   },
   rootDir: ".",
   moduleNameMapper: {

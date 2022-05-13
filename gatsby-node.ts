@@ -5,21 +5,14 @@
  */
 
 // You can delete this file if you're not using it
-const path = require("path");
+import path from "path";
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+import type { GatsbyNode } from "gatsby";
+
+export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({
+  actions,
+}) => {
   actions.setWebpackConfig({
-    module: {
-      rules: [
-        {
-          test: /\.m(j|t)sx?$/,
-          exclude: /(node_modules|bower_components)/,
-          use: {
-            loader: "swc-loader",
-          },
-        },
-      ],
-    },
     resolve: {
       alias: {
         "~services": path.resolve(__dirname, "src/services"),

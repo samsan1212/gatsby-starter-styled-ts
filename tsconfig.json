@@ -26,8 +26,9 @@
   "include": [
     "src",
     "gatsby-provider-wrapper.tsx",
-    "gatsby-ssr.ts",
-    "gatsby-browser.ts"
-  ],
-  "exclude": ["gatsby-browser.ts", "gatsby-node.js", "gatsby-config.js"]
+    "gatsby-ssr.tsx",
+    "gatsby-browser.tsx",
+    "gatsby-node.js",
+    "gatsby-config.js"
+  ]
 }

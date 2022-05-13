@@ -1,9 +1,13 @@
 {
+  "plugins": [["@babel/plugin-proposal-decorators", { "version": "2021-12" }]],
   "presets": [
     [
       "babel-preset-gatsby",
       {
-        "reactRuntime": "automatic"
+        "reactRuntime": "automatic",
+        "targets": {
+          "browsers": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+        }
       }
     ]
   ]

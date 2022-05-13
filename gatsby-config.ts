@@ -1,4 +1,11 @@
-module.exports = {
+import path from "path";
+
+import postPresetEnv from "postcss-preset-env";
+import * as sass from "sass";
+
+import type { GatsbyConfig } from "gatsby";
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Gatsby Typescript Suite Starter`,
     description: `A Gatsby starter for typescript`,
@@ -10,19 +17,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/src/assets`,
+        path: path.resolve(`src/assets`),
       },
     },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {
-        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+        postCssPlugins: [postPresetEnv({ stage: 0 })],
       },
     },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        implementation: require("sass"),
+        implementation: sass,
       },
     },
     `gatsby-plugin-less`,
@@ -45,3 +52,5 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 };
+
+export default config;
