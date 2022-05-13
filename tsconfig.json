@@ -17,8 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "~services/*": ["./src/services/*"],
-      "~components/*": ["./src/components/*"],
+      "~modules/*": ["./src/modules/*"],
       "~assets/*": ["./src/assets/*"],
       "~utils/*": ["./src/utils/*"]
     }
@@ -28,7 +27,7 @@
     "gatsby-provider-wrapper.tsx",
     "gatsby-ssr.tsx",
     "gatsby-browser.tsx",
-    "gatsby-node.js",
-    "gatsby-config.js"
+    "gatsby-node.ts",
+    "gatsby-config.ts"
   ]
 }

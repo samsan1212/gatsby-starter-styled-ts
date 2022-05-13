@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
     description: `A Gatsby starter for typescript`,
     author: `Sam TS Chan`,
   },
+  jsxRuntime: "automatic",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
