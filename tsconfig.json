@@ -19,7 +19,7 @@
     "paths": {
       "~modules/*": ["./src/modules/*"],
       "~assets/*": ["./src/assets/*"],
-      "~utils/*": ["./src/utils/*"]
+      "~/*": ["./src/*"]
     }
   },
   "include": [

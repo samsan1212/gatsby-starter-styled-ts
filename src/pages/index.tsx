@@ -1,15 +1,14 @@
 import { Link } from "gatsby";
 
-import Image from "~components/image";
-import Layout from "~components/layout";
-import SEO from "~components/seo";
+import { GatsbyHead } from "~/modules/utils/gatsby-head";
+import Image from "~modules/image";
+import Layout from "~modules/layout";
 
 import type { PageProps } from "gatsby";
 
 export default function IndexPage(props: PageProps) {
   return (
     <Layout>
-      <SEO title="Home" />
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
@@ -21,3 +20,5 @@ export default function IndexPage(props: PageProps) {
     </Layout>
   );
 }
+
+export const Head = () => <GatsbyHead title="Home" />;

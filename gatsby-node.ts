@@ -17,7 +17,7 @@ export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({
       alias: {
         "~modules": path.resolve("src/modules"),
         "~assets": path.resolve("src/assets"),
-        "~utils": path.resolve("src/utils"),
+        "~": path.resolve("src"),
       },
     },
   });

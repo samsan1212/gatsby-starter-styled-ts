@@ -34,9 +34,9 @@ module.exports = {
       `gatsby-plugin-utils/dist/$1`,
       `gatsby-plugin-utils/$1`,
     ], // Workaround for https://github.com/facebook/jest/issues/9771
+    "~/(.*)$": "<rootDir>/src/$1",
     "~modules/(.*)$": "<rootDir>/src/modules/$1",
     "~assets/(.*)$": "<rootDir>/src/assets/$1",
-    "~utils/(.*)$": "<rootDir>/src/utils/$1",
   },
   testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
   transformIgnorePatterns: [`node_modules/(?!(gatsby|gatsby-script)/)`],

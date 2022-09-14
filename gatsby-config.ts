@@ -1,7 +1,6 @@
 import path from "path";
 
 import postPresetEnv from "postcss-preset-env";
-import * as sass from "sass";
 
 import type { GatsbyConfig } from "gatsby";
 
@@ -13,7 +12,6 @@ const config: GatsbyConfig = {
   },
   jsxRuntime: "automatic",
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,13 +25,6 @@ const config: GatsbyConfig = {
         postCssPlugins: [postPresetEnv({ stage: 0 })],
       },
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: sass,
-      },
-    },
-    `gatsby-plugin-less`,
     `gatsby-plugin-eslint`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
