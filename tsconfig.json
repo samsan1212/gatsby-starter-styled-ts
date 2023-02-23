@@ -24,10 +24,10 @@
   },
   "include": [
     "src",
-    "gatsby-provider-wrapper.tsx",
-    "gatsby-ssr.tsx",
-    "gatsby-browser.tsx",
-    "gatsby-node.ts",
-    "gatsby-config.ts"
+    "gatsby-provider-wrapper.mjs",
+    "gatsby-ssr.mjs",
+    "gatsby-browser.mjs",
+    "gatsby-node.mjs",
+    "gatsby-config.mjs"
   ]
 }

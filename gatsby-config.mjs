@@ -2,9 +2,8 @@ import path from "path";
 
 import postPresetEnv from "postcss-preset-env";
 
-import type { GatsbyConfig } from "gatsby";
-
-const config: GatsbyConfig = {
+/** @type {import("gatsby").GatsbyConfig} */
+const config = {
   siteMetadata: {
     title: `Gatsby Typescript Suite Starter`,
     description: `A Gatsby starter for typescript`,

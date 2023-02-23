@@ -7,11 +7,8 @@
 // You can delete this file if you're not using it
 import path from "path";
 
-import type { GatsbyNode } from "gatsby";
-
-export const onCreateWebpackConfig: GatsbyNode["onCreateWebpackConfig"] = ({
-  actions,
-}) => {
+/** @type {import("gatsby").GatsbyNode['onCreateWebpackConfig']} */
+export const onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {

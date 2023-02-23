@@ -1,5 +1,4 @@
 {
-  "plugins": [["@babel/plugin-proposal-decorators", { "version": "legacy" }]],
   "presets": [
     [
       "babel-preset-gatsby",
