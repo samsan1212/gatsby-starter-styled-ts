@@ -1,6 +1,6 @@
-import path from "path";
+const path = require("path");
 
-import postPresetEnv from "postcss-preset-env";
+const postPresetEnv = require("postcss-preset-env");
 
 /** @type {import("gatsby").GatsbyConfig} */
 const config = {
@@ -24,7 +24,6 @@ const config = {
         postCssPlugins: [postPresetEnv({ stage: 0 })],
       },
     },
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -44,4 +43,4 @@ const config = {
   ],
 };
 
-export default config;
+module.exports = config;

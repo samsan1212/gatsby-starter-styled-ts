@@ -5,10 +5,10 @@
  */
 
 // You can delete this file if you're not using it
-import path from "path";
+const path = require("path");
 
 /** @type {import("gatsby").GatsbyNode['onCreateWebpackConfig']} */
-export const onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {

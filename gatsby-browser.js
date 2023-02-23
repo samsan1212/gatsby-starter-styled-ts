@@ -1,4 +1,4 @@
-import WrappedRootElement from "./gatsby-provider-wrapper.mjs";
+import WrappedRootElement from "./gatsby-provider-wrapper";
 
 /** @type {import("gatsby").GatsbyBrowser["wrapRootElement"]} */
 export const wrapRootElement = (props) => {
